@@ -1,2 +1,2 @@
 # tiaak-sPorto
-this project made for gdsc recruitment requirement
+this project is made for gdsc recruitment requirement

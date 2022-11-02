@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Poppins:wght@100;400;600&display=swap');
+
+:root{
+		--box-shadow: 0px 16px 30px 0px #7090B033;
+		--black: #051131;
+		--light-color: #666;
+
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	transition: all .2s linear;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+.top{
+	position: fixed;
+	top: -110%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1004;
+	background: rgba(0, 0, 0,.8);
+	z-index: 1000;
+}
+
+.top.active{
+	top: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.name h1{
+	font-family: 'Damion', cursive;
+	display: block;
+	font-size: 20rem;
+	text-align: center;
+	color: var(--black);
+}
+
+.card,.footer{
+	font-family: 'Poppins', sans-serif;
+}
+
+.fav{
+	cursor: pointer;
+	box-shadow: var(--box-shadow);
+	border-radius: 2rem;
+	position: absolute;
+	padding: 3rem;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.fav:hover{
+	transform: rotate(0);
+}
+
+.fav img{
+	width: 15rem;
+	display: block;
+	margin: auto;
+}
+
+.fav:hover img{
+	width: 18rem;
+}
+
+.fav p{
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 2rem;
+	font-weight: bold;
+}
+
+.fav p.one,
+.fav p.two,
+.fav p.three,
+.fav p.four,
+.fav p.five{
+	display: none;
+}
+
+.fav.zoom{
+	z-index: 9999;
+	height: 50rem;
+	width: 50rem;
+	transform: rotate(0);
+	position: absolute;
+	display: block;
+	top: 7rem;
+}
+
+.fav.zoom img{
+	width: 35rem;
+}
+
+.fav.satu.zoom,
+.fav.tiga.zoom{
+	margin-left: 34rem;
+}
+
+.fav.empat.zoom{
+	left: 41rem;
+}
+
+.fav.dua.zoom,
+.fav.lima.zoom{
+	margin-right: 34rem;
+}
+
+.satu{
+	top: 10rem;
+	left: 10rem;
+	transform: rotate(-20deg);
+}
+
+.dua{
+	top: 10rem;
+	right: 10rem;
+	transform: rotate(20deg);
+}
+
+.tiga{
+	top: 40rem;
+	left: 12rem;
+	transform: rotate(-20deg);
+}
+
+.empat{
+	top: 45rem;
+	left: 41.5%;
+	
+}
+
+.lima{
+	top: 40rem;
+	right: 12rem;
+	transform: rotate(20deg);
+}
+
+
+.footer{
+	display: block;
+	margin-top: 27rem;
+}
+
+.footer .social img{
+	cursor: pointer;
+	width: 4rem;
+	padding: 1rem;
+	margin-bottom: -2rem;
+}
+
+.footer p{
+	text-align: center;
+	font-size: 1.5rem;
+	color: var(--light-color);
+	margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUERY*/
+@media (max-width: 991px){
+	html{
+		font-size: 50%;
+	}
+
+	.name h1{
+		font-size: 18rem;
+	}
+
+	.fav.zoom{
+		top: 16rem;
+		margin-left: 25rem;
+		margin-right: 25rem;
+	}
+
+	.fav img{
+		width: 13rem;
+	}
+
+	.fav:hover img{
+		width: 16rem;
+	}
+
+	.empat{
+		top: 40rem;
+	}
+
+	.fav.satu.zoom,
+	.fav.tiga.zoom{
+			margin-left: 23rem;
+	}
+
+	.fav.empat.zoom{
+			left: 8rem;
+	}
+
+	.fav.dua.zoom,
+	.fav.lima.zoom{
+			margin-right: 23rem;
+	}
+
+
+	
+}
+
+@media (max-width: 800px){
+
+	.footer{
+		margin-top: 5rem;
+	}
+
+	.fav{
+		position: static;
+		transform: rotate(0);
+		width: 20rem;
+		margin: 2rem auto;
+		display: block;
+	}
+
+	.fav img{
+		display: inherit;
+		margin-top: 2rem;
+	}
+
+
+	.fav.zoom{
+		top: 13rem;
+		left: 3rem;
+	}
+
+}
+
+@media (max-width:  450px){
+	html{
+		font-size: 40%;
+	}
+
+	.name h1{
+		font-size: 19rem;
+	}
+
+	.fav.zoom{
+		top: 13rem;
+		left: .5rem;
+	}
+
+
+}

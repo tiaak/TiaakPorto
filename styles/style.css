@@ -188,11 +188,11 @@ html{
 		margin-right: 25rem;
 	}
 
-	.fav img{
+	img{
 		width: 13rem;
 	}
 
-	.fav:hover img{
+	img:hover{
 		width: 16rem;
 	}
 
@@ -218,10 +218,14 @@ html{
 	
 }
 
-@media (max-width: 800px){
+@media (max-width: 768px){
 
 	.footer{
 		margin-top: 5rem;
+	}
+
+	.name h1{
+		font-size: 20rem;
 	}
 
 	.fav{
@@ -232,15 +236,13 @@ html{
 		display: block;
 	}
 
-	.fav img{
-		display: inherit;
-		margin-top: 2rem;
+	img .zoom:hover {
+		width: 22rem;
 	}
 
-
 	.fav.zoom{
-		top: 13rem;
-		left: 3rem;
+		top: 16rem;
+		left: 1rem;
 	}
 
 }
@@ -253,11 +255,5 @@ html{
 	.name h1{
 		font-size: 19rem;
 	}
-
-	.fav.zoom{
-		top: 13rem;
-		left: .5rem;
-	}
-
 
 }
